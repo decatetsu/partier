@@ -21,6 +21,9 @@ module.exports = merge(common, {
         hot: true,
         port: 3000,
         open: true,
+        watchFiles: [
+            'src/index.html'
+        ],
     },
     plugins: [
         new Webpack.DefinePlugin({

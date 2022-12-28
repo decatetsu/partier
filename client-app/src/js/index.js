@@ -1,9 +1,8 @@
-import * as ReactDOM from 'react-dom';
+import {createRoot} from 'react-dom/client';
 
-import '../scss/app.scss';
+import '../scss/index.scss';
+
 import {App} from "./App.tsx";
 
-ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-);
+const container = document.getElementById('root');
+createRoot(container).render(<App/>);

@@ -31,6 +31,7 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, '../src/public'),
                     to: 'public',
+                    noErrorOnMissing: true,
                 }
             ],
         }),
